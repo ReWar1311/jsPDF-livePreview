@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Chakra Petch", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+a {
+   color: #218838;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #d7d7d7;
+}
+
+header {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    gap: 10px;
+}
+
+.panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.panel-header {
+    background: rgb(33, 33, 33);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #ffffff;
+    border-bottom: 10px solid #1d1d1d;
+}
+
+#editor {
+    flex: 1;
+    height: 500px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+iframe {
+    flex: 1;
+    border: none;
+}
+
+button,
+input,
+select,
+label {
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 10em;
+    height: 3em;
+    border-radius: .25em;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+input[type="color"] {
+    border: none;
+    height: 30px;
+    width: 40px;
+}
+
+
+  
+  select {
+    /* Reset Select */
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #000000;
+    background-color: #cecece;
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #cecece;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  
+  .checkbox-wrapper-55 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+  }
+
+  .checkbox-wrapper-55 *,
+  .checkbox-wrapper-55 ::after,
+  .checkbox-wrapper-55 ::before {
+    box-sizing: border-box;
+  }
+
+  .checkbox-wrapper-55 .rocker {
+    display: inline-block;
+    position: relative;
+    /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+    width: 7em;
+    height: 4em;
+    overflow: hidden;
+    border-bottom: 0.5em solid #eee;
+  }
+
+  .checkbox-wrapper-55 .rocker-small {
+    font-size: 0.75em;
+  }
+
+  .checkbox-wrapper-55 .rocker::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    border: 0.5em solid #eee;
+    border-bottom: 0;
+  }
+
+  .checkbox-wrapper-55 .switch-left,
+  .checkbox-wrapper-55 .switch-right {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 3em;
+    transition: 0.2s;
+    user-select: none;
+  }
+
+  .checkbox-wrapper-55 .switch-left {
+    height: 2.4em;
+    width: 2.75em;
+    left: 0.85em;
+    bottom: 0.4em;
+    background-color: #ddd;
+    transform: rotate(15deg) skewX(15deg);
+  }
+
+  .checkbox-wrapper-55 .switch-right {
+    right: 0.5em;
+    bottom: 0;
+    background-color: #bd5757;
+    color: #fff;
+  }
+
+  .checkbox-wrapper-55 .switch-left::before,
+  .checkbox-wrapper-55 .switch-right::before {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 2.45em;
+    bottom: -0.45em;
+    background-color: #ccc;
+    transform: skewY(-65deg);
+  }
+
+  .checkbox-wrapper-55 .switch-left::before {
+    left: -0.4em;
+  }
+
+  .checkbox-wrapper-55 .switch-right::before {
+    right: -0.375em;
+    background-color: transparent;
+    transform: skewY(65deg);
+  }
+
+  .checkbox-wrapper-55 input:checked + .switch-left {
+    background-color: #0084d0;
+    color: #fff;
+    bottom: 0px;
+    left: 0.5em;
+    height: 2.5em;
+    width: 3em;
+    transform: rotate(0deg) skewX(0deg);
+  }
+
+  .checkbox-wrapper-55 input:checked + .switch-left::before {
+    background-color: transparent;
+    width: 3.0833em;
+  }
+
+  .checkbox-wrapper-55 input:checked + .switch-left + .switch-right {
+    background-color: #ddd;
+    color: #888;
+    bottom: 0.4em;
+    right: 0.8em;
+    height: 2.4em;
+    width: 2.75em;
+    transform: rotate(-15deg) skewX(-15deg);
+  }
+
+  .checkbox-wrapper-55 input:checked + .switch-left + .switch-right::before {
+    background-color: #ccc;
+  }
+
+  /* Keyboard Users */
+  .checkbox-wrapper-55 input:focus + .switch-left {
+    color: #333;
+  }
+
+  .checkbox-wrapper-55 input:checked:focus + .switch-left {
+    color: #fff;
+  }
+
+  .checkbox-wrapper-55 input:focus + .switch-left + .switch-right {
+    color: #fff;
+  }
+
+  .checkbox-wrapper-55 input:checked:focus + .switch-left + .switch-right {
+    color: #333;
+  }
+  

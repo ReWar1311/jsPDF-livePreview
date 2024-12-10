@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jsPDF Editor with Auto-Run, Grids, and Font Control</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.34.1/min/vs/loader.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      jsPDF Editor
+      <a
+        href="https://www.linkedin.com/in/prashant-rewar-b8785225b"
+        target="_blank"
+        >linkedin</a
+      >
+      <a href="https://github.com/ReWar1311/jsPDF-livePreview.git" target="_blank">GitHubi-repo</a>
+    </header>
+    <main>
+      <div class="panel">
+        <div class="panel-header">Code Editor</div>
+        <div class="controls">
+          <label>Font Size:</label>
+          <input type="range" id="font-size" min="10" max="20" value="14" />
+          <label for="auto-run">Auto-Run Code:</label>
+          <div class="checkbox-wrapper-55">
+            <label class="rocker rocker-small">
+              <input type="checkbox" id="auto-run" />
+              <span class="switch-left">Yes</span>
+              <span class="switch-right">No</span>
+            </label>
+          </div>
+          <button id="run-code">Run Code</button>
+        </div>
+        <div id="editor"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">PDF Preview</div>
+        <div class="controls">
+          <label for="grid-toggle">Show Grid:</label>
+          <div class="checkbox-wrapper-55">
+            <label class="rocker rocker-small">
+              <input type="checkbox" id="grid-toggle" />
+              <span class="switch-left">Yes</span>
+              <span class="switch-right">No</span>
+            </label>
+          </div>
+          <label for="grid-color">Grid Color:</label>
+          <input type="color" id="grid-color" value="#cccccc" />
+          <label for="grid-spacing">Grid Spacing:</label>
+          <div class="select">
+            <select id="grid-spacing">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+            </select>
+          </div>
+        </div>
+        <iframe id="pdf-preview"></iframe>
+      </div>
+    </main>
+
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>
