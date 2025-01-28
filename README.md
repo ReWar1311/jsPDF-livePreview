@@ -1,11 +1,14 @@
 # jsPDF-livePreview
+
 Shows live preview of pdf while writing the code, added grids and auto run code for a better UX and ease.(A code-editor for jsPDF library)
 
 (live:https://js-pdf-live-preview.vercel.app)
-While working with a project, I had too generate pdfs, but I was totally embarrased of fixing small anomalities or design with downloading the pdf each time.
+
+## While working with a project, I had too generate pdfs, but I was totally embarrased of fixing small anomalities or design with downloading the pdf each time.
 So I created this☺.
 
-#code:
+## code:
+
 -Used monaco-editor as the code editor.
 -Added custom commands in suggestions of monaco-editor for jsPDF.
 -Used blob to open pdf in browser's pdf-viewer without downloading
@@ -13,7 +16,7 @@ So I created this☺.
 -Used getCSSSCAN template for checkbox(https://getcssscan.com/css-checkboxes-examples).
 
 
-#features:
+## features:
  -Shows preview of generated pdf side-by-side.
  -Added auto-run code option for live preview and also shows error alert in jsPDF code if button is used.
  -Added grids with custom color and spacing for better control over preview.
