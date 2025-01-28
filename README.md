@@ -9,18 +9,18 @@ So I created this☺.
 
 ## code:
 
--Used monaco-editor as the code editor.
--Added custom commands in suggestions of monaco-editor for jsPDF.
--Used blob to open pdf in browser's pdf-viewer without downloading
--Used Codepan template for Select optons(https://codepen.io/mrphang/pen/XWxKdpV).
--Used getCSSSCAN template for checkbox(https://getcssscan.com/css-checkboxes-examples).
+- Used monaco-editor as the code editor.
+- Added custom commands in suggestions of monaco-editor for jsPDF.
+- Used blob to open pdf in browser's pdf-viewer without downloading
+- Used Codepan template for Select optons(https://codepen.io/mrphang/pen/XWxKdpV).
+- Used getCSSSCAN template for checkbox(https://getcssscan.com/css-checkboxes-examples).
 
 
 ## features:
- -Shows preview of generated pdf side-by-side.
- -Added auto-run code option for live preview and also shows error alert in jsPDF code if button is used.
- -Added grids with custom color and spacing for better control over preview.
- -Custamized suggestions according to the jsPDF.
+ - Shows preview of generated pdf side-by-side.
+ - Added auto-run code option for live preview and also shows error alert in jsPDF code if button is used.
+ - Added grids with custom color and spacing for better control over preview.
+ - Custamized suggestions according to the jsPDF.
 
  Next(if worked on it) =>{Integrate AI prompt-bar to auto-write jsPDF code by giving a prompt}
 
